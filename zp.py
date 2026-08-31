@@ -12,11 +12,10 @@ import matplotlib.ticker as mticker
 # Paths
 # =============================================================================
 # NOTE: the original line was
-#     Path(__file__).parent / "/Users/amaansiddiqi/.../Sheet6.csv"
 # pathlib discards the left-hand side whenever the right-hand side is
 # absolute, so `.parent` was doing nothing. Written plainly below.
 DEFAULT_ZETA_CSV = Path(
-    "/Users/amaansiddiqi/Documents/Nanobubble Analysis/ZS-NS SUMMARY - Sheet6.csv"
+    "ZS-NS SUMMARY - Sheet6.csv"
 )
 
 ZETA_CSV = Path(sys.argv[1]) if len(sys.argv) > 1 else DEFAULT_ZETA_CSV
